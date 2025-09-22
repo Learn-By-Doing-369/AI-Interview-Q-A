@@ -1,46 +1,19 @@
-site_name: AI & ML Knowledge Hub
-site_url: https://Learn-By-Doing-369.github.io/AI-Interview-Q-A/
-site_description: Learn AI, ML, DL, NLP, CV, LLM, and more hands-on
-
-theme:
-  name: material
-  features:
-    - navigation.top        # horizontal top menu
-    - navigation.instant    # instant loading
-    - header.autohide       # header hides on scroll
-
-markdown_extensions:
-  - meta
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.tasklist
-  - pymdownx.arithmatex
-
-plugins:
-  - mkdocs-jupyter:
-      execute: false
-      include_source: true
-  - search
+site_name: AI Interview Q&A - Learn By Doing 369
+site_description: 'AI/ML/DL interview preparation with practical questions and concepts'
+site_url: 'https://learn-by-doing-369.github.io/AI-Interview-Q-A/'
 
 nav:
   - Home: index.md
-  - Machine Learning: "Machine_Learning_QA.ipynb"
-  - Deep Learning: "Deep_Learning_QA.ipynb"
-  - NLP: 
-      - "00_Intro_NLP.ipynb"
-      - "01_Text_Classification.ipynb"
-  - Computer Vision:
-      - "00_Intro_CV.ipynb"
-      - "01_Image_Classification.ipynb"
-  - Generative AI:
-      - "00_GAN_Basics.ipynb"
-      - "01_Diffusion_Models.ipynb"
-  - Agentic AI:
-      - "00_Concepts.ipynb"
-      - "01_Examples.ipynb"
-  - LLM:
-      - "00_Intro_LLM.ipynb"
-      - "01_FineTuning.ipynb"
-  - Statistics:
-      - "00_Probability.ipynb"
-      - "01_Regression.ipynb"
+  - Machine Learning: Machine_Learning_QA.ipynb
+  - Deep Learning: Deep_Learning_QA.ipynb
+
+plugins:
+  - mkdocs-jupyter
+  - search
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
